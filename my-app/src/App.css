@@ -7,19 +7,15 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #FFF8F0 0%, #F5EDE6 100%);
-  min-height: 100vh;
 }
 
 header {
   background: linear-gradient(135deg, #B8A99A 0%, #9C8B7A 100%);
   color: #4E342E;
   padding: 1.2rem 0;
-  box-shadow: 0 4px 20px rgba(93, 64, 55, 0.15);
-  border-bottom: 3px solid #C4B5A7;
 }
 
 header .container {
-  max-width: 1200px;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -30,25 +26,17 @@ header .container {
   font-size: 2.2rem;
   font-weight: 700;
   color: #3A2C25;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
 nav {
   display: flex;
   gap: 1.5rem;
-  align-items: center;
 }
 
 nav a {
   color: #F0E6DC;
-  padding: 0.7rem 1.3rem;
-  border-radius: 10px;
-  transition: all 0.4s;
   font-weight: 600;
-  text-decoration: none;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 nav a:hover {
@@ -58,116 +46,11 @@ nav a:hover {
   box-shadow: 0 8px 20px rgba(93, 64, 55, 0.3);
 }
 
-/* BOTONES SUPER ESTÉTICOS */
-.btn {
-  padding: 1rem 2rem;
-  border-radius: 15px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  font-family: inherit;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 0.9rem;
-}
-
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  transition: left 0.6s;
-}
-
-.btn:hover::before {
-  left: 100%;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #D4C6B8 0%, #B8A99A 50%, #9C8B7A 100%);
-  color: #3A2C25;
-  box-shadow: 
-    0 6px 20px rgba(156, 139, 122, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.1);
-  border: 2px solid #E8DED5;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, #9C8B7A 0%, #B8A99A 50%, #D4C6B8 100%);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 
-    0 12px 30px rgba(156, 139, 122, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  color: #2C1E17;
-}
-
-.btn-secondary {
-  background: linear-gradient(135deg, #8D6E63 0%, #6D4C41 50%, #5D4037 100%);
-  color: #FFF8E1;
-  box-shadow: 
-    0 6px 20px rgba(93, 64, 55, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.2);
-  border: 2px solid #A1887F;
-}
-
-.btn-secondary:hover {
-  background: linear-gradient(135deg, #5D4037 0%, #6D4C41 50%, #8D6E63 100%);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 
-    0 12px 30px rgba(93, 64, 55, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  color: #FFFFFF;
-}
-
-.btn-carrito {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 1rem 1.5rem;
-  background: linear-gradient(135deg, #A1887F 0%, #8D6E63 50%, #6D4C41 100%);
-  color: #FFF8E1;
-  box-shadow: 
-    0 6px 20px rgba(141, 110, 99, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  border: 2px solid #BCAAA4;
-}
-
-.btn-carrito:hover {
-  background: linear-gradient(135deg, #6D4C41 0%, #8D6E63 50%, #A1887F 100%);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 
-    0 12px 30px rgba(141, 110, 99, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-#contador-carrito {
-  background: linear-gradient(135deg, #FFF8E1, #F5EDE6);
-  color: #5D4037;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
 #login {
   max-width: 420px;
   margin: 4rem auto;
   padding: 3rem;
-  background: linear-gradient(145deg, #FFFFFF, #F8F4F0);
+  background: linear-gradient(145deg, #f7f4f2 0%, #c9bdb1 100%);
   border-radius: 20px;
   box-shadow: 
     0 15px 35px rgba(93, 64, 55, 0.1),
@@ -195,7 +78,6 @@ nav a:hover {
   border-radius: 12px;
   font-size: 1rem;
   transition: all 0.3s;
-  background: #FFFDFB;
   color: #5D4037;
   font-family: inherit;
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
@@ -215,35 +97,17 @@ nav a:hover {
   padding: 1.2rem 2rem;
   border-radius: 15px;
   font-size: 1rem;
-  cursor: pointer;
   transition: all 0.4s;
   font-weight: 700;
   margin-top: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   background: linear-gradient(135deg, #9C8B7A 0%, #7D6B5A 50%, #6D5B4A 100%);
   color: #FFFDFB;
-  border: none;
   box-shadow: 
     0 6px 20px rgba(156, 139, 122, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   position: relative;
-  overflow: hidden;
-}
-
-#form-inicio button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-  transition: left 0.6s;
-}
-
-#form-inicio button:hover::before {
-  left: 100%;
+  border: none;
 }
 
 #form-inicio button:hover {
@@ -252,22 +116,6 @@ nav a:hover {
   box-shadow: 
     0 12px 30px rgba(109, 91, 74, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-#mensaje-inicio {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  border-radius: 10px;
-  background: #FFFDFB;
-  border: 2px solid #E8DED5;
-  color: #5D4037;
-  font-weight: 500;
-}
-
-main.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
 }
 
 #productos h2 {
@@ -281,7 +129,7 @@ main.container {
 }
 
 footer {
-  background: linear-gradient(135deg, #C4B5A7 0%, #B8A99A 100%);
+  background: linear-gradient(135deg, #ff0000 0%, #B8A99A 100%);
   color: #3A2C25;
   text-align: center;
   padding: 2.5rem;
